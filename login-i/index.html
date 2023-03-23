@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="imgs/fb.png" alt="">
+                <img src="imgs/tw.png" alt="">
+                <img src="imgs/gp.png" alt="">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="user Id" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box" placeholder="user Id"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="user Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box" placeholder="user Id"><span>agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <script>
+        let loginForm=document.getElementById("login");
+        let registerForm=document.getElementById("register");
+        let activeBtn=document.getElementById("btn");
+
+        function register() {
+            loginForm.style.left="-400px";
+            registerForm.style.left="50px";
+            activeBtn.style.left="110px";
+        }
+        function login() {
+            loginForm.style.left="";
+            registerForm.style.left="";
+            activeBtn.style.left="";
+        }
+    </script>
+</body>
+</html>

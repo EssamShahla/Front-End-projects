@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+body{
+    font-family: 'Almarai' , sans-serif;
+    background-image: url(imgs/bgi\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+/* end golbel sec */
+img:nth-child(1){
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    z-index: -2;
+}
+img:nth-child(2){
+    position: absolute;
+    top:30% ;
+    left: 40%;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    z-index: -1;
+}
+img:nth-child(3){
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    z-index: -5;
+}
+header{
+    min-height: 100px;
+    color: #00318B;
+}
+header .container{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .container .logo{
+    font-size: 28px;
+}
+header .container span{
+    color: #0089D9;
+}
+header .container .left-nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header .container .icon-bar{
+    display: none;
+}
+header .container .left-nav .icon-bar .fa-bars{
+    color: #00318B;
+}
+header .container .left-nav nav{
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+header .container .left-nav nav a{
+    font-size: 18px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+header .container .left-nav nav a:hover{
+    color: #0089D9;
+    border-bottom: 2px solid #0089D9;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+header .container .left-nav .email{
+    background-color: #00318B;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+header .container .left-nav .login{
+    background-color: #0089D9;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+@media (max-width:768px) {
+    body{
+        background-image: none;
+    }
+    body img{
+        display: none;
+    }
+    header .container .logo{
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    header .container .left-nav {
+        display: none;
+    }
+    header .container .icon-bar{
+        display: block;
+        font-size: 2rem;
+    }
+}
+/* end header sec */
+.hero{
+    min-height: 60vh;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.hero .container .content{
+    width: 60%;
+}
+.hero .container .content1{
+    padding-bottom: 30px;
+}
+.hero .container .content1 h2{
+    font-size: 63px;
+    font-weight: bold;
+    color: #00318B;
+}
+.hero .container .content1 h3{
+    font-size: 50px;
+    font-weight: 500;
+    color: #0089D9;
+}
+.hero .container .content1 p{
+    font-size: 18px;
+    color: #5D5D5D;
+    padding-top: 10px;
+}
+.hero .container .content2 .p1{
+    font-size: 16px;
+    color: #0089D9;
+}
+.hero .container .content2 p{
+    font-size: 16px;
+    color: #5D5D5D;
+    padding-top: 10px;
+    line-height: 25px;
+}
+.hero .container .details {
+    padding-top: 30px;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+}
+.hero .container .details .more{
+    background-color: #0089D9;
+    font-size: 16px;
+    padding: 10px 35px; 
+    border: none;
+    border-radius: 4px;
+}
+.hero .container .details .Reservate{
+    background-color: #00318B;
+    font-size: 16px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 4px;
+}
+@media (max-width:768px) {
+    .hero{
+        background-color: #CAE5F0;
+    }
+    .hero .container .content{
+        width: 100%;
+    }
+    .hero .container .content2 .p1{
+        font-size: 16px;
+        color: #17191a;
+    }
+}
+/* end hero sec */
+
+
+
+

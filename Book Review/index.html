@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>=
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome icons -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <!-- Bootstrap v5.2.2 css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- custom style css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Book Review</title>
+</head>
+
+<body data-bs-spy="scroll">
+
+    <!-- Header section  -->
+    <!-- up nav -->
+    <header class="nav-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><span>Review</span>Book</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-top" aria-controls="nav-top" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class=" collapse navbar-collapse" id="nav-top">
+                    <form action="" class="d-flex mx-auto w-50 position-relative" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Find the book you are looking for" aria-label="Search">
+                      <button class="btn position-absolute end-0 top-50 translate-middle" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="actions d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+                      <button class="btn"><i class="bi bi-heart"></i></button>
+                      <button id="list-num" class="btn number" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">3</button>
+                      <button class="btn">EN</button>
+                      </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="offcanvas-fav" id="offcanvas-fav">
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">your fav books</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  </div>
+</div>
+    </div>
+    <!-- down nav -->
+    <header class="nav-buttom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+       
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Bestseller">Bestseller</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Category">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Community">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Blog">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="offcanvas-content">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">button-nav</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+
+      <header class="nav-buttom">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bestseller</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header> 
+    </div>
+        </div>
+    <!-- end header sec -->
+
+    <!-- Hero section -->
+    <div class="hero" id="Home">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row row-cols-md-2 align-items-center">
+                        <div class=" ps-5 mt-5 mt-md-0 pt-5">
+                            <h1>Book is a 
+                                window to the world</h1>
+                            <p class="py-3">wake up your dream by reading a book every day</p>
+                            <button class="btn btn-lg px-5 py-2 btn-success">Read Now</button>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                            <img src="assets/img/her-img.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row row-cols-md-2 align-items-center">
+                        <div class="ps-5 mt-md-5 pt-5">
+                            <h1>Book is a 
+                                window to the world</h1>
+                            <p>wake up your dream by reading a book every day</p>
+                            <button class="btn btn-lg px-5 py-2 btn-success">Read Now</button>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                            <img src="assets/img/her-img.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row row-cols-md-2 align-items-center">
+                        <div class="ps-5 mt-md-5 pt-5">
+                            <h1>Book is a 
+                                window to the world</h1>
+                            <p>wake up your dream by reading a book every day</p>
+                            <button class="btn btn-lg px-5 py-2 btn-success">Read Now</button>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                            <img src="assets/img/her-img.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Popular section -->
+    <section class="popular mt-5" id="Bestseller">
+      <div class="container ">
+        <div class="d-flex align-items-center justify-content-between pb-4">
+          <h2>Popular Now</h2>
+          <a href="" class="text-decoration-none"><h3 class="text-muted">View All</h3></a>
+        </div>
+       
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gx-0 gx-md-5 gy-5">
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/popular/popular-img1.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">Selena</h4>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Tere Liye
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar1.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Andre Syak</span><i class="bi bi-dot"></i> <span class="opacity-75">1 week ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/popular/popular-img2.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">How To Master Your Habits</h4>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Felix Y Siauw
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar2.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>John Lucas </span><i class="bi bi-dot"></i> <span class="opacity-75"> 5 day ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/popular/popular-img3.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">Bintang</h4>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Tere Liye
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar3.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Ade Barkah </span><i class="bi bi-dot"></i><span class="opacity-75"> 6 month ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/popular/popular-img4.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">Start With Why</h4>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Felix Y Siauw
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar1.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Ryan Dewa </span><i class="bi bi-dot"></i><span class="opacity-75"> 3 month ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest section -->
+    <section class="latest" id="Category">
+      <div class="container py-2">
+        <div class="d-flex align-items-center justify-content-between pb-4">
+          <h2>Popular Now</h2>
+          <a href="" class="text-decoration-none"><h3 class="text-muted">View All</h3></a>
+        </div>
+       
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gx-0 gx-md-5 gy-5">
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/last/last-img1.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">The Compound Effect</h4>
+                <div class="stars d-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Drren Hardy
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar1.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Andre Syak </span><i class="bi bi-dot"></i> <span class="opacity-75">1 week ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/last/last-img2.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title w-75">Build A Story Brand</h4>
+                <div class="stars d-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Donald Miller
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar2.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>John Lucas </span><i class="bi bi-dot"></i> <span class="opacity-75"> 5 day ago</span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/last/last-img3.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">Crushing IT</h4>
+                <div class="stars d-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  Gary Vaynerchuck
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar3.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Ade Barkah </span><i class="bi bi-dot"></i><span class="opacity-75"> 6 month ago </span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow">
+              <img src="assets/img/last/last-img4.svg" class="card-img-top p-3" alt="Selena">
+              <div class="card-body">
+                <h4 class="card-title">Atomic Habits</h4>
+                <div class="stars d-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="catg py-3 opacity-75">
+                  James Clear
+                </div>
+                <div class="auth-info d-flex align-items-center py-3 pb-4">
+                  <img src="assets/img/popular/avatar1.svg" alt="avatar1" class="me-1">
+                  <div class="auth-name">
+                    <span>Ryan Dewa </span><i class="bi bi-dot"></i><span class="opacity-75"> 3 month ago </span>
+                  </div>
+                </div>
+                <button class="btn" id="add-book">add fav</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recommended section -->
+    <section class="recommended">
+      <div class="container my-5">
+        <div class="content d-flex flex-column justify-content-center align-items-center gap-5">
+            <h1 class="text-center">Recommended books from you to review</h1>
+          <div class="recommend-form w-50">
+            <form action="" class="d-flex gap-3">
+              <input class="form-control w-100" type="text" placeholder="write your recommendation">
+              <button class="btn btn-lg btn-success py-3 px-4 fs-4" type="submit">Submit</button>
+            </form>
+          </div>         
+      </div>
+    </div>
+    </section>
+    <!-- Testimony section -->
+    <section class="testimony" id="Community">
+      <div class="container py-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-4 gy-5 gy-lg-0">
+          <div class="col">
+              <div class="card text-center p-3">
+                <img src="assets/img/Testimony/pic1.svg" alt="" class="position-absolute top-0 start-50 translate-middle py-5">
+                <img src="assets/img/Testimony/quta.svg" alt="" class="position-absolute top-0 end-0 translate-middle">
+                <div class="card-body mt-5">
+                  <h5 class="card-title">Eka Ardilah</h5>
+                  <p class="card-text text-muted mt-4">I feel very helpful with all the books provided, so I do my job easily and happily</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card p-3 text-center" >
+              <img src="assets/img/Testimony/pic2.svg" alt="" class="position-absolute top-0 start-50 translate-middle py-5">
+              <img src="assets/img/Testimony/quta.svg" alt="" class="position-absolute top-0 end-0 translate-middle">
+              <div class="card-body mt-5">
+                <h5 class="card-title">Hazar Hamzah</h5>
+                <p class="card-text text-muted mt-4">Thank you. Many good books to accompany everyday</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3 text-center">
+              <img src="assets/img/Testimony/pic3.svg" alt="" class="position-absolute top-0 start-50 translate-middle py-5">
+              <img src="assets/img/Testimony/quta.svg" alt="" class="position-absolute top-0 end-0 translate-middle">
+              <div class="card-body mt-5">
+                <h5 class="card-title">Khoerunnisa</h5>
+                <p class="card-text text-muted mt-4">Thanks team, many recommended books for me to read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="container">
+        <div class="row g-4 text-center text-md-start">
+          <div class="col-sm col-lg-6 col-md-4 ">
+            <h4><span>Review</span>Book</h4>
+            <p class="pt-3">Is the best place to review a book</p>
+          </div>
+          <div class="col-sm col-lg-3 col-md-4 d-flex flex-column gap-2">
+            <h5>Navigation</h5>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Bestseller</a>
+            <a href="#" class="nav-link">Category</a>
+            <a href="#" class="nav-link">Community</a>
+            <a href="#" class="nav-link">Blog</a>
+          </div>
+          <div class="col-sm col-lg-3 col-md-4 d-flex flex-column gap-2">
+            <h5>Company</h5>
+            <a href="mailto:" class="nav-link">admin@reviewbook.com</a>
+            <a href="" class="nav-link">Jln. Stiabudhi No. 193</a>
+            <a href="" class="nav-link">Bandung Indonesia</a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col"><p>&copy; 2021 ReviewBook. All rights reserved.</p></div>
+          <div class="col m-auto d-flex justify-content-end align-items-center gap-3">
+            <a href="" class="number"><i class="fa-brands fa-instagram fs-5"></i></a>
+            <a href="" class="number"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- up icon -->
+    <div class="up-arrow fs-4">
+      <i id="up" class="fa-duotone fa-arrow-up position-fixed bottom-0 end-0 m-4 p-3 arrow-up-green"></i>
+    </div>
+    <!-- Bootstrap v5.2.2 js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom script js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

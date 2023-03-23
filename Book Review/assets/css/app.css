@@ -1,0 +1,257 @@
+/* Strat Globle CSS */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+:root {
+    --gold : #FFC735;
+    --primary : #FBF4E2 ;
+    --primary_bg : #F9F8F4;
+    --green : #B4D51E ;
+    --blue : #463C74;
+    --blue-op50 : #473d7699;
+    --white:#ffffff;
+    --gray-dark:#828282;
+    --gray-light:#94A2B3;
+    --gray-light2:#F8F7F5;
+    --block:#000000;
+    --block-op60:#00000099;
+}
+body{
+    font-family: 'Merriweather' ,sans-serif;
+}
+section{
+    padding: 5vh 0;
+}
+h1 , h2 , h3{
+    color: var(--blue);
+    font-weight: 700;
+ }
+.btn-success{
+    background-color: var(--green) !important;
+    border-color : var(--green) !important;
+}
+input::-webkit-input-placeholder{
+    color: var(--blue-op50) !important;
+    font-weight: lighter !important;
+}
+/* Header section */
+header .number{
+    width: 36px;
+    height: 36px;
+    background-color: var(--green);
+    color: var(--white) !important;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+header .number:hover{
+    background: var(--primary) !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+}
+header.nav-top form i{
+    color: var(--blue-op50) !important;
+}
+header.nav-top form input{
+    background-color: var(--gray-light2) !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-left: 20px !important;
+    padding-right: 50px !important;
+}
+header.nav-top .navbar-brand{
+    color: var(--green);
+    font-size:24px;
+    font-family: 'McLaren', cursive;
+}
+header.nav-top .navbar-brand:hover{
+    color: var(--green);
+    font-size:24px;
+}
+header.nav-top .navbar-brand span{
+    color: var(--blue);
+}
+header.nav-buttom .nav-link{
+    color: var(--blue-op50) !important;
+}
+.nav-buttom .nav-link.active{
+    color: var(--blue) !important;
+    border-bottom: 2px solid var(--green) !important;
+}
+/* Hero section */
+.hero .container .row{
+    background-color: var(--primary);
+    background-image: url(../img/hero-bgi.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 0;
+    border-radius: 70px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--green) !important;
+    height: 5px;
+    width: 20px;
+    border-radius:46% !important;
+}
+.carousel-indicators [data-bs-target].active {
+    background-color: var(--gray-dark) !important;
+}
+/* Popular section */
+.popular .card{
+    min-height: 550px ;
+    border: none ;
+}
+.popular .card img.card-img-top{
+    min-width: 182px;
+    height: 263px;
+}
+.popular .card .stars{
+    width: fit-content;
+    display: flex;
+}
+.popular .card .stars .fa-star{
+    color: var(--gray-light2);
+    font-size: 20px !important;
+}
+.popular .card .stars .fa-star.active{
+    color: var(--green) !important;
+}
+.popular .card .stars:hover .fa-star{
+    color: var(--green) !important;
+}
+.popular .card .stars .fa-star:hover ~ .fa-star{
+    color: var(--gray-light2) !important;
+}
+.popular .card-body .btn{
+    background-color: var(--gold);
+    overflow: hidden;
+    padding: 0px;
+    height: 0px;
+    border: none;
+    transition: 0.23s;
+    opacity: 0;
+}
+.popular .card:hover .btn{
+    padding:5px 20px;
+    height: 40px;
+    opacity: 1;
+}
+/* Latest section */
+.latest .card{
+    min-height: 550px ;
+    border: none ;
+}
+.latest .card img.card-img-top{
+    min-width: 190px;
+    height: 280px;
+}
+.latest .card .stars{
+    width: fit-content;
+}
+.latest .card .stars .fa-star{
+    color: var(--gray-light2);
+    font-size: 20px !important;
+}
+.latest .card .stars .fa-star.active{
+    color: var(--green) !important;
+}
+.latest .card .stars:hover .fa-star{
+    color: var(--green) !important;
+}
+.latest .card .stars .fa-star:hover ~ .fa-star{
+    color: var(--gray-light2) !important;
+}
+.latest .card-body .btn{
+    background-color: var(--gold);
+    overflow: hidden;
+    padding: 0px;
+    height: 0px;
+    border: none;
+    transition: 0.23s;
+    opacity: 0;
+}
+.latest .card:hover .btn{
+    padding:5px 20px;
+    height: 40px;
+    opacity: 1;
+}
+#add-book:active{
+    background: var(--green) !important;
+    color: var(--white) !important;
+}
+/* Recommended section */
+.recommended .container .content{
+    min-height: 70vh;
+    background-color: var(--primary);
+    background-image: url(../img/hero-bgi.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 70px;
+}
+.recommended .form-control{
+    border: none !important;
+    box-shadow: none !important;
+}
+@media (max-width : 768px ) {
+    .recommended h1{
+        font-size: 25px !important;
+    }
+    .recommended .recommend-form{
+        width: 100% !important;
+    } 
+    .recommended form {
+       flex-direction: column;
+    }
+    .recommended form input{
+        padding: 20px !important;
+    }
+    .recommended form button{
+        width: fit-content;
+        margin: auto;
+    }
+}
+/* Testimony section */
+.testimony .card{
+    min-height: 35vh;
+    border: 2px solid var(--green);
+}
+.testimony p{
+    color: var(--gray-light);
+    font-size: 14px;
+}
+/* Footer section */
+.footer{
+    min-height: 40vh; 
+    background-color: var(--primary);
+}
+.footer h4{
+    color: var(--green);
+    font-size:32px;
+    font-family: 'McLaren', cursive;
+}
+.footer h4 span{
+    color: var(--blue);
+}
+.footer p , .footer a{
+    color: var(--gray-dark);
+    font-size: 16px;
+}
+.footer .col .fa-brands{
+    transition: .3s;
+}
+.footer .col .fa-brands:hover{
+    color: var(--green);
+}
+/* arrow up */
+.arrow-up-green{
+    color: var(--blue);
+    background-color: var(--green) !important;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.arrow-up-green.show{
+    display: inline;
+}
+/* end */
